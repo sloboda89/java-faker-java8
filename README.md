@@ -15,9 +15,9 @@ In pom.xml, add the following xml stanza between `<dependencies> ... </dependenc
 
 ```xml
 <dependency>
-    <groupId>com.github.javafaker</groupId>
-    <artifactId>javafaker</artifactId>
-    <version>1.0.2</version>
+    <groupId>org.psloboda.code</groupId>
+    <artifactId>javafaker-java8</artifactId>
+    <version>1.1.0</version>
 </dependency>
 ```
 
@@ -25,7 +25,7 @@ For gradle users, add the following to your build.gradle file.
 
 ```groovy
 dependencies {
-    implementation 'com.github.javafaker:javafaker:1.0.2'
+    implementation 'org.psloboda.code:javafaker-java8:1.1.0'
 }
 
 ```

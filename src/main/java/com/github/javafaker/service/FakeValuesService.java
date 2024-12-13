@@ -32,7 +32,7 @@ public class FakeValuesService {
     private final RandomService randomService;
 
     /**
-     * <p>
+     * 
      * Resolves YAML file using the most specific path first based on language and country code.
      * 'en_US' would resolve in the following order:
      * <ol>
@@ -47,7 +47,7 @@ public class FakeValuesService {
      * <li>En-Us</li>
      * <li>eN_uS</li>
      * </ul>
-     * </p>
+     * 
      *
      * @param locale
      * @param randomService
@@ -81,7 +81,7 @@ public class FakeValuesService {
 
     /**
      * Convert the specified locale into a chain of locales used for message resolution. For example:
-     * <p>
+     * 
      * {@link Locale#FRANCE} (fr_FR) -> [ fr_FR, anotherTest, en ]
      *
      * @return a list of {@link Locale} instances
@@ -140,14 +140,14 @@ public class FakeValuesService {
 
     /**
      * Safely fetches a key.
-     * <p>
+     * 
      * If the value is null, it will return an empty string.
-     * <p>
+     * 
      * If it is a list, it will assume it is a list of strings and select a random value from it.
-     * <p>
+     * 
      * If the retrieved value is an slash encoded regular expression such as {@code /[a-b]/} then
      * the regex will be converted to a regexify expression and returned (ex. {@code #regexify '[a-b]'})
-     * <p>
+     * 
      * Otherwise it will just return the value as a string.
      *
      * @param key           the key to fetch from the YML structure.
@@ -202,8 +202,9 @@ public class FakeValuesService {
     }
 
     /**
+     * <p>
      * Returns a string with the '#' characters in the parameter replaced with random digits between 0-9 inclusive.
-     * <p/>
+     * </p>
      * For example, the string "ABC##EFG" could be replaced with a string like "ABC99EFG".
      *
      * @param numberString
@@ -255,9 +256,10 @@ public class FakeValuesService {
     }
 
     /**
+     * <p>
      * Returns a string with the '?' characters in the parameter replaced with random alphabetic
      * characters.
-     * <p/>
+     * </p>
      * For example, the string "12??34" could be replaced with a string like "12AB34".
      *
      * @param letterString
@@ -268,9 +270,10 @@ public class FakeValuesService {
     }
 
     /**
+     * <p>
      * Returns a string with the '?' characters in the parameter replaced with random alphabetic
      * characters.
-     * <p/>
+     * </p>
      * For example, the string "12??34" could be replaced with a string like "12AB34".
      *
      * @param letterString
@@ -296,9 +299,9 @@ public class FakeValuesService {
 
     /**
      * Resolves a key to a method on an object.
-     * <p>
+     * 
      * #{hello} with result in a method call to current.hello();
-     * <p>
+     * 
      * #{Person.hello_someone} will result in a method call to person.helloSomeone();
      */
     public String resolve(String key, Object current, Faker root) {
@@ -323,22 +326,22 @@ public class FakeValuesService {
     }
 
     /**
-     * <p>processes a expression in the style #{X.y} using the current objects as the 'current' location
+     * processes a expression in the style #{X.y} using the current objects as the 'current' location
      * within the yml file (or the {@link Faker} object hierarchy as it were).
-     * </p>
-     * <p>
+     * 
+     * 
      * #{Address.streetName} would get resolved to {@link Faker#address()}'s {@link Address#streetName()}
-     * </p>
-     * <p>
+     * 
+     * 
      * #{address.street} would get resolved to the YAML > locale: faker: address: street:
-     * </p>
-     * <p>
+     * 
+     * 
      * Combinations are supported as well: "#{x} #{y}"
-     * </p>
-     * <p>
+     * 
+     * 
      * Recursive templates are supported.  if "#{x}" resolves to "#{Address.streetName}" then "#{x}" resolves to
      * {@link Faker#address()}'s {@link Address#streetName()}.
-     * </p>
+     * 
      */
     protected String resolveExpression(String expression, Object current, Faker root) {
         final Matcher matcher = EXPRESSION_PATTERN.matcher(expression);
