@@ -27,6 +27,7 @@ public class EnFile {
     }
 
     private static List<String> FILES = Arrays.asList("address.yml",
+            "adjective.yml",
             "ancient.yml",
             "animal.yml",
             "app.yml",

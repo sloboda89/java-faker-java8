@@ -16,6 +16,7 @@ public class Faker {
     private final RandomService randomService;
     private final FakeValuesService fakeValuesService;
 
+    private final Adjective adjective;
     private final Ancient ancient;
     private final App app;
     private final Artist artist;
@@ -132,6 +133,7 @@ public class Faker {
         this.randomService = random;
         this.fakeValuesService = fakeValuesService;
 
+        this.adjective = new Adjective(this);
         this.ancient = new Ancient(this);
         this.app = new App(this);
         this.artist = new Artist(this);
@@ -345,6 +347,10 @@ public class Faker {
 
     FakeValuesService fakeValuesService() {
         return this.fakeValuesService;
+    }
+
+    public Adjective adjective() {
+        return adjective;
     }
 
     public Ancient ancient() {
