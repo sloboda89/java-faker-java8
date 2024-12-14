@@ -2,8 +2,8 @@ Java Faker
 ==========
 
 [![Maven Status](https://maven-badges.herokuapp.com/maven-central/org.psloboda.code/javafaker-java8/badge.svg?style=flat)](https://mvnrepository.com/artifact/org.psloboda.code/javafaker-java8)
-[![Build Status](https://travis-ci.org/DiUS/java-faker.svg?branch=master)](https://travis-ci.org/DiUS/java-faker)
-[![Coverage Status](https://coveralls.io/repos/DiUS/java-faker/badge.svg)](https://coveralls.io/r/DiUS/java-faker)
+[![coverage](https://github.com/sloboda89/java-faker-java8/blob/badges/jacoco.svg)](https://github.com/sloboda89/java-faker-java8/actions/workflows/code_quality_checks.yml) 
+[![branches coverage](https://github.com/sloboda89/java-faker-java8/blob/badges/branches.svg)](https://github.com/sloboda89/java-faker-java8/actions/workflows/code_quality_checks.yml)
 [![License](http://img.shields.io/:license-apache-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 This library is a port of Ruby's [faker](https://github.com/stympy/faker) gem (as well as Perl's Data::Faker library) that generates fake data.
@@ -17,7 +17,7 @@ In pom.xml, add the following xml stanza between `<dependencies> ... </dependenc
 <dependency>
     <groupId>org.psloboda.code</groupId>
     <artifactId>javafaker-java8</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
 </dependency>
 ```
 
