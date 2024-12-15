@@ -17,7 +17,7 @@ In pom.xml, add the following xml stanza between `<dependencies> ... </dependenc
 <dependency>
     <groupId>org.psloboda.code</groupId>
     <artifactId>javafaker-java8</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
 </dependency>
 ```
 
@@ -25,7 +25,7 @@ For gradle users, add the following to your build.gradle file.
 
 ```groovy
 dependencies {
-    implementation 'org.psloboda.code:javafaker-java8:1.1.0'
+    implementation 'org.psloboda.code:javafaker-java8:1.1.2'
 }
 
 ```
@@ -56,6 +56,7 @@ Fakers
 -----
 * Address
 * Adjective
+* Airport
 * Ancient
 * Animal
 * App

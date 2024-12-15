@@ -176,6 +176,8 @@ public class FakerIT {
         testAllMethodsThatReturnStringsActuallyReturnStrings(faker.basketball());
         testAllMethodsThatReturnStringsActuallyReturnStrings(faker.barcode());
         testAllMethodsThatReturnStringsActuallyReturnStrings(faker.englandfootball());
+        testAllMethodsThatReturnStringsActuallyReturnStrings(faker.adjective());
+        testAllMethodsThatReturnStringsActuallyReturnStrings(faker.airport());
     }
 
     private void testAllMethodsThatReturnStringsActuallyReturnStrings(Object object) throws Exception {

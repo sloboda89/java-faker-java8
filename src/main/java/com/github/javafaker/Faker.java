@@ -17,6 +17,7 @@ public class Faker {
     private final FakeValuesService fakeValuesService;
 
     private final Adjective adjective;
+    private final Airport airport;
     private final Ancient ancient;
     private final App app;
     private final Artist artist;
@@ -134,6 +135,7 @@ public class Faker {
         this.fakeValuesService = fakeValuesService;
 
         this.adjective = new Adjective(this);
+        this.airport = new Airport(this);
         this.ancient = new Ancient(this);
         this.app = new App(this);
         this.artist = new Artist(this);
@@ -351,6 +353,10 @@ public class Faker {
 
     public Adjective adjective() {
         return adjective;
+    }
+
+    public Airport airport() {
+        return airport;
     }
 
     public Ancient ancient() {
