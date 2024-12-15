@@ -1,7 +1,7 @@
 Java Faker
 ==========
 
-[![Maven Status](https://maven-badges.herokuapp.com/maven-central/org.psloboda.code/javafaker-java8/badge.svg?style=flat)](https://mvnrepository.com/artifact/org.psloboda.code/javafaker-java8)
+[![Maven Central Version](https://img.shields.io/maven-central/v/org.psloboda.code/javafaker-java8)](https://mvnrepository.com/artifact/org.psloboda.code/javafaker-java8)
 [![coverage](https://github.com/sloboda89/java-faker-java8/blob/badges/jacoco.svg)](https://github.com/sloboda89/java-faker-java8/actions/workflows/code_quality_checks.yml) 
 [![branches coverage](https://github.com/sloboda89/java-faker-java8/blob/badges/branches.svg)](https://github.com/sloboda89/java-faker-java8/actions/workflows/code_quality_checks.yml)
 [![License](http://img.shields.io/:license-apache-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
